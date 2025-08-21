@@ -23,7 +23,7 @@ links:
     link: /blog
     icon: https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/24x24/apps/akregator.svg
   - text: Reportar um bug
-    link: https://github.com/estudio-debian/estudio-debian/issues
+    link: https://github.com/estudio-debian/estudio-debian.github.io/issues
     icon: https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/64x64/apps/bugdom.svg
     target: blank
   - text: Telegram

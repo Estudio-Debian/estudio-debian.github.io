@@ -15,7 +15,7 @@ Ou, se preferir pode instalar pelo terminal:
 
 ```sh
 wget -q --show-progress https://estudio-debian.github.io/dist/bashrun.deb
-sudo apt install ./bashrun.deb
+sudo apt install --reinstall ./bashrun.deb
 ```
 > [!WARNING] :zap: :exclamation: Aviso importante :exclamation: :zap:
 > Pra que tudo funcione como esperado, é necessário executar todos os scripts nas categorias _**Dependências**_, _**Fontes**_ e _**Núcleo**_.
