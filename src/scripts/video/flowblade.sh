@@ -13,6 +13,6 @@ EXEC_NEW='env GDK_BACKEND=x11 flowblade'
 # shellcheck disable=SC2034
 INSTNAME='flowblade'
 # shellcheck disable=SC1090
-source <(curl -sSL https://estudio-debian.github.io/dist/functions.sh)
+source <(curl -sSL https://github.com/Estudio-Debian/estudio-debian.github.io/raw/main/src/dist/functions.sh)
 fix_launcher
 install_deb

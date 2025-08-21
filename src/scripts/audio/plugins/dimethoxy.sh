@@ -3,7 +3,7 @@ set -e
 # shellcheck disable=SC2034
 TARGET="$(curl -sSL https://api.github.com/repos/Dimethoxy/Disflux/releases | grep browser_download_url | grep download | grep ubuntu.deb | head -n1 | cut -d '"' -f4)"
 # shellcheck disable=SC1090
-source <(curl -sSL https://estudio-debian.github.io/dist/functions.sh)
+source <(curl -sSL https://github.com/Estudio-Debian/estudio-debian.github.io/raw/main/src/dist/functions.sh)
 enter_tmp
 download
 install_deb

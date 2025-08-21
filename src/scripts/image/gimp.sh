@@ -16,7 +16,7 @@ PPA='ubuntuhandbook1/gimp-3'
 # shellcheck disable=SC2034
 INSTNAME='gimp'
 # shellcheck disable=SC1090
-source <(curl -sSL https://estudio-debian.github.io/dist/functions.sh)
+source <(curl -sSL https://github.com/Estudio-Debian/estudio-debian.github.io/raw/main/src/dist/functions.sh)
 add_ppa
 install_deb
 mkdir -p "$HOME"/.config/GIMP/3.0

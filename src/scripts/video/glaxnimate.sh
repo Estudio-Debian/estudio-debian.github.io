@@ -16,7 +16,7 @@ DEPS="cmake\
     qttools5-dev\
     zlib1g-dev"
 # shellcheck disable=SC1090
-source <(curl -sSL https://estudio-debian.github.io/dist/functions.sh)
+source <(curl -sSL https://github.com/Estudio-Debian/estudio-debian.github.io/raw/main/src/dist/functions.sh)
 enter_tmp
 install_deb
 git clone -q --recursive https://gitlab.com/mattbas/glaxnimate
