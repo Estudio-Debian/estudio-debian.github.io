@@ -1,0 +1,9 @@
+Package: bashrun
+Version: 0.0.1
+Architecture: all
+Maintainer: Raul Dipeas <github@rauldipeas.com.br>
+Section: system
+Priority: optional
+Depends: curl, imagemagick, p7zip, wget, zenity
+Homepage: https://github.com/rauldipeas/estudio-debian/bashrun
+Description: Run bash scripts directly from the web browser

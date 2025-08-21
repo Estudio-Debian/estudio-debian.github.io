@@ -1,0 +1,9 @@
+#!/bin/bash
+SCRIPT="$(printf "%s" "${@//br:/}")"
+rm -rf /tmp/studio-debian-main
+cd /tmp || exit
+wget -q --show-progress https://github.com/rauldipeas/studio-debian/archive/refs/heads/main.zip
+unzip -qq main.zip
+bash "$(find /tmp/estudio-debian-main/src/scripts/ -type f -name "$SCRIPT.sh")"
+printf 'Pressione qualquer tecla para fechar...'
+read -r -n1

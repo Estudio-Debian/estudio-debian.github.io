@@ -1,0 +1,37 @@
+input: .
+output: .retype
+
+url: estudio-debian.github.io
+
+favicon: resources/mx-packageinstaller.svg
+
+branding:
+  title: Estúdio Debian
+  logo: resources/mx-packageinstaller.svg
+  logoDark:
+  logoAlign: left
+  label:
+
+links:
+  - text: Início
+    link: /
+    icon: https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/24x24/apps/gargoyle-house.svg
+  - text: Instalação
+    link: /installation
+    icon: https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/24x24/apps/mx-packageinstaller.svg
+  - text: Notícias
+    link: /blog
+    icon: https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/24x24/apps/akregator.svg
+  - text: Reportar um bug
+    link: https://github.com/estudio-debian/estudio-debian/issues
+    icon: https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/64x64/apps/bugdom.svg
+    target: blank
+  - text: Telegram
+    link: https://t.me/producaomusicalnolinux
+    icon: https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/24x24/panel/telegram-panel.svg
+    target: blank
+
+showSidebarFilter: false
+
+editor:
+  enabled: false
