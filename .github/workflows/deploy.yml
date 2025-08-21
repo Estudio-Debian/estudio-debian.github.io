@@ -11,7 +11,10 @@ jobs:
     permissions:
       contents: write
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v5
+      - run: |
+          dpkg-deb -b --root-owner-group bashrun
+          mv bashrun.deb src/dist/
       - uses: retypeapp/action-build@latest
         with:
           config_path: src/
