@@ -1,6 +1,6 @@
 #!/bin/bash
 SCRIPT="$(printf "%s" "${@//br:/}")"
-rm -rf /tmp/studio-debian-main
+rm -rf /tmp/estudio-debian.github.io-main
 cd /tmp || exit
 wget -q --show-progress https://github.com/estudio-debian/estudio-debian.github.io/archive/refs/heads/main.zip
 unzip -qq main.zip
