@@ -1,8 +1,10 @@
 #!/bin/bash
 set -e
 enter_tmp() {
-    sudo find /tmp -mindepth 1 -maxdepth 1 -writable -not -path "/tmp/.veracrypt*" -not -path "*-unix*" -exec rm -fr {} +
-    cd /tmp
+    #sudo find /tmp -mindepth 1 -maxdepth 1 -writable -not -path "/tmp/.veracrypt*" -not -path "*-unix*" -exec rm -fr {} +
+    rm -rf /tmp/download
+    mkdir /tmp/download
+    cd /tmp/download
 }
 
 download() {
@@ -77,7 +79,8 @@ install_deb() {
     if [ -n "$INSTNAME" ]; then
         printf "%s" "$INSTNAME" | xargs sudo apt install -y --reinstall
     else
-        printf "%s" "$(sudo find /tmp -mindepth 1 -maxdepth 1 -writable -not -path "/tmp/.veracrypt*" -not -path "*-unix*" -name '*.deb')" | xargs sudo apt install -y --reinstall
+        #printf "%s" "$(sudo find /tmp -mindepth 1 -maxdepth 1 -writable -not -path "/tmp/.veracrypt*" -not -path "*-unix*" -name '*.deb')" | xargs sudo apt install -y --reinstall
+        sudo apt install -y --reinstall /tmp/download/*.deb
     fi
 }
 

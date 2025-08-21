@@ -15,7 +15,7 @@ Ou, se preferir pode instalar pelo terminal:
 
 ```sh
 rm -f bashrun.deb # caso já tenha baixado uma versão anterior do pacote
-wget -cq --show-progress https://estudio-debian.github.io/dist/bashrun.deb
+wget -q --show-progress https://estudio-debian.github.io/dist/bashrun.deb
 sudo apt install --reinstall ./bashrun.deb
 ```
 > [!WARNING] :zap: :exclamation: Aviso importante :exclamation: :zap:

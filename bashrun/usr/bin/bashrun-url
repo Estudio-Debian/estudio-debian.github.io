@@ -2,8 +2,8 @@
 SCRIPT="$(printf "%s" "${@//br:/}")"
 rm -rf /tmp/estudio-debian.github.io-main /tmp/main.zip
 cd /tmp || exit
-wget -q --show-progress https://github.com/estudio-debian/estudio-debian.github.io/archive/refs/heads/main.zip
-unzip -qq main.zip
+wget -q https://github.com/estudio-debian/estudio-debian.github.io/archive/refs/heads/main.zip
+unzip -oqq main.zip
 bash "$(find /tmp/estudio-debian.github.io-main/src/scripts/ -type f -name "$SCRIPT.sh")"
 printf 'Pressione qualquer tecla para fechar...'
 read -r -n1
