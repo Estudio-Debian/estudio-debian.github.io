@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.11.0.809176181510">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.11.0.809176386481">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.11.0">
@@ -30,12 +30,12 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link href="../../../resources/mx-packageinstaller.svg" rel="icon">
-    <link href="../../../resources/css/retype.css?v=3.11.0.809176181510" rel="stylesheet">
+    <link href="../../../resources/css/retype.css?v=3.11.0.809176386481" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.11.0.809176181510" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.11.0.809176386481" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../../resources/js/retype.js?v=3.11.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.11.0.809176181510" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="../../../resources/js/prism.js?v=3.11.0.809176181510" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.11.0.809176386481" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="../../../resources/js/prism.js?v=3.11.0.809176386481" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -287,20 +287,20 @@ sudo sed -i 's/ nosmt=force//g' /etc/default/grub.d/ubuntustudio.cfg
 sudo sed -i 's/threadirqs/threadirqs nosmt=force/g' /etc/default/grub.d/ubuntustudio.cfg
 sudo update-grub
 mkdir -p &quot;$HOME&quot;/.config/rncbc.org
-wget -q --show-progress -O &quot;$HOME&quot;/.config/rncbc.org/QjackCtl.conf https://github.com/estudio-debian/estudio-debian.github.io/raw/main/settings/audio/jack/QjackCtl.conf
+wget -q --show-progress -O &quot;$HOME&quot;/.config/rncbc.org/QjackCtl.conf https://github.com/estudio-debian/estudio-debian.github.io/raw/main/src/settings/audio/jack/QjackCtl.conf
 mkdir -p &quot;$HOME&quot;/.config/pipewire/pipewire.conf.d
 export QOPT=128
 export ROPT=44100
-curl -sSL https://github.com/estudio-debian/estudio-debian.github.io/raw/main/settings/audio/pipewire/99-custom.conf | envsubst | tee &quot;$HOME&quot;/.config/pipewire/pipewire.conf.d/99-custom.conf &gt;/dev/null
+curl -sSL https://github.com/estudio-debian/estudio-debian.github.io/raw/main/src/settings/audio/pipewire/99-custom.conf | envsubst | tee &quot;$HOME&quot;/.config/pipewire/pipewire.conf.d/99-custom.conf &gt;/dev/null
 systemctl --user restart pipewire pipewire-pulse
 sudo mkdir -p /usr/local/{bin,share/applications}
-sudo wget -q --show-progress -O /usr/local/bin/pipewire-latency-switcher https://github.com/estudio-debian/estudio-debian.github.io/raw/main/settings/audio/pipewire/pipewire-latency-switcher
+sudo wget -q --show-progress -O /usr/local/bin/pipewire-latency-switcher https://github.com/estudio-debian/estudio-debian.github.io/raw/main/src/settings/audio/pipewire/pipewire-latency-switcher
 sudo chmod +x /usr/local/bin/pipewire-latency-switcher
-sudo wget -q --show-progress -O /usr/local/share/applications/pipewire-latency-switcher.desktop https://github.com/estudio-debian/estudio-debian.github.io/raw/main/settings/audio/pipewire/pipewire-latency-switcher.desktop
+sudo wget -q --show-progress -O /usr/local/share/applications/pipewire-latency-switcher.desktop https://github.com/estudio-debian/estudio-debian.github.io/raw/main/src/settings/audio/pipewire/pipewire-latency-switcher.desktop
 if [ &quot;$(gsettings get org.gnome.desktop.interface icon-theme)&quot; == &quot;'Papirus-Dark'&quot; ]; then
 	sudo sed -i 's/audio-speakers/hifi/' /usr/local/share/applications/pipewire-latency-switcher.desktop
 fi
-sudo wget -q --show-progress -O /usr/local/bin/toggle-pipewire-jack https://github.com/estudio-debian/estudio-debian.github.io/raw/main/settings/audio/pipewire/toggle-pipewire-jack
+sudo wget -q --show-progress -O /usr/local/bin/toggle-pipewire-jack https://github.com/estudio-debian/estudio-debian.github.io/raw/main/src/settings/audio/pipewire/toggle-pipewire-jack
 sudo chmod +x /usr/local/bin/toggle-pipewire-jack
 mkdir -p &quot;$HOME&quot;/.config/nohang
 tee &quot;$HOME&quot;/.config/nohang/nohang.conf &gt;/dev/null &lt;&lt;EOF
