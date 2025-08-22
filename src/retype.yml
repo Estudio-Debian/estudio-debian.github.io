@@ -5,6 +5,8 @@ url: estudio-debian.github.io
 
 favicon: resources/mx-packageinstaller.svg
 
+locale: pt
+
 branding:
   title: Estúdio Debian
   logo: resources/mx-packageinstaller.svg
@@ -35,3 +37,11 @@ showSidebarFilter: false
 
 editor:
   enabled: false
+
+snippets:
+  lineNumbers:
+    - sh
+
+#integrations:
+#  crisp:
+#    id: 6a0fc9ed-1bdf-4599-b640-bbda454ac99a

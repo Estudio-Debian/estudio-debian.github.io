@@ -3,4 +3,4 @@ icon: https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-them
 ---
 # ![](https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/64x64/apps/webcamoid.svg) Iriun Webcam
 :::code source="iriun.sh" :::
-[!button corners="pill" text="Executar script"](br:iriun)
+[!button icon="terminal" iconAlign="right" corners="round" text="Executar script"](br:iriun)

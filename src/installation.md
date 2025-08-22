@@ -7,7 +7,7 @@ order: 100
 
 Pra executar os scripts deste repositório de forma facilitada, você pode instalar o `bashrun`, um utilitário que permite executar os scripts clicando num botão presente em todas as páginas.
 
-[!button corners="pill" text="Executar script"]()
+[!button icon="terminal" iconAlign="right" corners="round" text="Executar script"]()
 
 Você pode baixar o `bashrun` [**aqui**](../dist/bashrun.deb).
 

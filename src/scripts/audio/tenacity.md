@@ -3,4 +3,4 @@ icon: https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-them
 ---
 # ![](https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/64x64/apps/tenacity.svg) Tenacity
 :::code source="tenacity.sh" :::
-[!button corners="pill" text="Executar script"](br:tenacity)
+[!button icon="terminal" iconAlign="right" corners="round" text="Executar script"](br:tenacity)

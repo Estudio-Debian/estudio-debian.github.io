@@ -8,7 +8,7 @@ label: Glaxnimate
 
 >[!INFO] FUNCIONA NO UBUNTU
 
-==- Ver o script
+==- ![](https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/22x22/mimetypes/text-x-script.svg) Ver o script
 :::code source="glaxnimate.sh" :::
 ===
-[!button corners="pill" text="Executar script"](br:glaxnimate)
+[!button icon="terminal" iconAlign="right" corners="round" variant="warning" text="Executar script"](br:glaxnimate)
