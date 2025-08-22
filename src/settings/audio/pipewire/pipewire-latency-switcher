@@ -50,7 +50,7 @@ zenity --question \
 mkdir -p "$HOME"/.config/pipewire/pipewire.conf.d
 export QOPT=$QOPT
 export ROPT=$ROPT
-curl -sSL https://github.com/estudio-debian/estudio-debian.github.io/raw/main/settings/audio/pipewire/99-custom.conf | envsubst | tee "$HOME"/.config/pipewire/pipewire.conf.d/99-custom.conf >/dev/null
+curl -sSL https://github.com/estudio-debian/estudio-debian.github.io/raw/main/src/settings/audio/pipewire/99-custom.conf | envsubst | tee "$HOME"/.config/pipewire/pipewire.conf.d/99-custom.conf >/dev/null
 
 systemctl --user restart pipewire pipewire-pulse
 
