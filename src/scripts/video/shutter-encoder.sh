@@ -17,7 +17,7 @@ ICON_OLD='/usr/lib/Shutter\ Encoder/usr/bin/icon.png'
 # shellcheck disable=SC2034
 ICON_NEW='shutter-encoder'
 # shellcheck disable=SC1090
-source <(curl -sSL https://github.com/Estudio-Debian/estudio-debian.github.io/raw/main/src/dist/functions.sh)
+source <(curl -sSL https://github.com/estudio-debian/estudio-debian.github.io/raw/main/src/dist/functions.sh)
 enter_tmp
 download
 fix_launcher

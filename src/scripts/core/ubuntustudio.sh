@@ -11,7 +11,7 @@ PPA='savoury1/multimedia'
 # shellcheck disable=SC2034
 INSTNAME='helvum'
 # shellcheck disable=SC1090
-source <(curl -sSL https://github.com/Estudio-Debian/estudio-debian.github.io/raw/main/src/dist/functions.sh)
+source <(curl -sSL https://github.com/estudio-debian/estudio-debian.github.io/raw/main/src/dist/functions.sh)
 add_ppa
 if [ "$(grep '^ID=' /etc/os-release | cut -d '=' -f2)" == debian ]; then
 	sudo apt install -y --reinstall ubuntu-archive-keyring
