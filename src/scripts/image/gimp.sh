@@ -20,5 +20,5 @@ source <(curl -sSL https://github.com/Estudio-Debian/estudio-debian.github.io/ra
 add_ppa
 install_deb
 mkdir -p "$HOME"/.config/GIMP/3.0
-wget -q --show-progress -O "$HOME"/.config/GIMP/3.0/gimprc https://rauldipeas.com.br/uds/settings/image/gimp/gimprc
-wget -q --show-progress -O "$HOME"/.config/GIMP/3.0/sessionrc https://rauldipeas.com.br/uds/settings/image/gimp/sessionrc
+wget -q --show-progress -O "$HOME"/.config/GIMP/3.0/gimprc https://github.com/estudio-debian/estudio-debian.github.io/raw/main/settings/image/gimp/gimprc
+wget -q --show-progress -O "$HOME"/.config/GIMP/3.0/sessionrc https://github.com/estudio-debian/estudio-debian.github.io/raw/main/settings/image/gimp/sessionrc

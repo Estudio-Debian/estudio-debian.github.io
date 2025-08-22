@@ -1,0 +1,18 @@
+#!/bin/bash
+set -e
+CONF="/etc/ld.so.conf.d/pipewire-jack.conf"
+if [ -L "$CONF" ]; then
+    printf "Desativando pipewire-jack..."
+    sudo rm -f "$CONF"
+else
+    printf "Ativando pipewire-jack..."
+    FILE="$(find /usr/share/doc/pipewire/examples/ld.so.conf.d/ -type f -name 'pipewire-jack-*-linux-gnu.conf' 2>/dev/null | head -n1)"
+    if [ -n "$FILE" ]; then
+        sudo ln -fs "$FILE" "$CONF"
+    else
+        printf "Arquivo de exemplo não encontrado."
+        exit 1
+    fi
+fi
+sudo ldconfig
+systemctl --user restart pipewire pipewire-pulse
