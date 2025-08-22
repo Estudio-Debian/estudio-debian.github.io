@@ -4,7 +4,7 @@
     <title>|36x36 Notícias</title>
     <link>https://estudio-debian.github.io/blog/</link>
     <description>|36x36 Notícias</description>
-    <lastBuildDate>Fri, 22 Aug 2025 10:50:00 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 22 Aug 2025 11:09:31 GMT</lastBuildDate>
     <generator>https://retype.com</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://estudio-debian.github.io/blog/feed.xml" />
     <item>
@@ -12,7 +12,7 @@
       <guid isPermaLink="true">https://estudio-debian.github.io/blog/primeira-postagem/</guid>
       <description>Debian</description>
       <author>github@rauldipeas.com.br (Raul Dipeas)</author>
-      <pubDate>Fri, 22 Aug 2025 10:50:00 GMT</pubDate>
+      <pubDate>Fri, 22 Aug 2025 11:09:31 GMT</pubDate>
       <category domain="https://estudio-debian.github.io/categories/lançamento/">lançamento</category>
     </item>
   </channel>
