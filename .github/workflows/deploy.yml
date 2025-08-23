@@ -26,5 +26,4 @@ jobs:
           remove-cancelled: true
           remove-failed: true
           remove-obsolete: true
-          token: ${{ secrets.GITHUB_TOKEN }}
           remove-older-than: 1d
