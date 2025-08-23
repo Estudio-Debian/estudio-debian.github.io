@@ -3,13 +3,13 @@ output: .retype
 
 url: estudio-debian.github.io
 
-favicon: resources/mx-packageinstaller.svg
+favicon: /static/mx-packageinstaller.svg
 
 locale: pt
 
 branding:
   title: Estúdio Debian
-  logo: resources/mx-packageinstaller.svg
+  logo: /static/mx-packageinstaller.svg
   logoDark:
   logoAlign: left
   label:

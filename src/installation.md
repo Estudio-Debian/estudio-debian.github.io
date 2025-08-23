@@ -9,13 +9,14 @@ Pra executar os scripts deste repositório de forma facilitada, você pode insta
 
 [!button icon="terminal" iconAlign="right" corners="round" text="Executar script"]()
 
-Você pode baixar o `bashrun` [**aqui**](../dist/bashrun.deb).
+Você pode baixar o `bashrun` aqui:
+[!file](/static/bashrun.deb)
 
 Ou, se preferir pode instalar pelo terminal:
 
 ```sh
 rm -f bashrun.deb # caso já tenha baixado uma versão anterior do pacote
-wget -q --show-progress https://estudio-debian.github.io/dist/bashrun.deb
+wget -q --show-progress https://estudio-debian.github.io/static/bashrun.deb
 sudo apt install --reinstall ./bashrun.deb
 ```
 > [!WARNING] :zap: :exclamation: Aviso importante :exclamation: :zap:

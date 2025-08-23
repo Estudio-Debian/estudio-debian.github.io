@@ -2,7 +2,7 @@
 set -e
 enter_tmp() {
     #sudo find /tmp -mindepth 1 -maxdepth 1 -writable -not -path "/tmp/.veracrypt*" -not -path "*-unix*" -exec rm -fr {} +
-    rm -rf /tmp/download
+    rm -fr /tmp/download
     mkdir /tmp/download
     cd /tmp/download
 }

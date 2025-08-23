@@ -20,7 +20,7 @@ EXEC_OLD2=''
 EXEC_NEW2=''
 ICON_OLD2=''
 ICON_NEW2=''
-source <(curl -sSL https://github.com/estudio-debian/estudio-debian.github.io/raw/main/src/dist/functions.sh)
+source <(curl -sSL https://github.com/estudio-debian/estudio-debian.github.io/raw/main/src/static/functions.sh)
 enter_tmp
 download
 add_ppa
