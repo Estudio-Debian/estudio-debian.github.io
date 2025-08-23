@@ -28,6 +28,10 @@ links:
     link: https://github.com/estudio-debian/estudio-debian.github.io/issues
     icon: https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/48x48/apps/bugdom.svg
     target: blank
+  - text: Desenvolvimento
+    link: https://tree.taiga.io/project/rauldipeas-estudio-debian/kanban
+    icon: https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/48x48/apps/devhelp.svg
+    target: blank
   - text: Telegram
     link: https://t.me/producaomusicalnolinux
     icon: https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/24x24/panel/telegram-panel.svg
