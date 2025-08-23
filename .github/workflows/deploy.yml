@@ -4,8 +4,6 @@ on:
     branches:
       - main
   workflow_dispatch:
-permissions:
-      contents: write
 jobs:
   publish:
     name: Publish to retype branch
@@ -28,4 +26,5 @@ jobs:
           remove-cancelled: true
           remove-failed: true
           remove-obsolete: true
+          token: ${{ secrets.PAT }}
           remove-older-than: 1d
