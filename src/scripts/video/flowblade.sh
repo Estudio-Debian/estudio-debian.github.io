@@ -7,6 +7,10 @@ LN='io.github.jliljebl.Flowblade'
 # shellcheck disable=SC2034
 SWMC='Flowblade'
 # shellcheck disable=SC2034
+EXEC_OLD='flowblade'
+# shellcheck disable=SC2034
+EXEC_NEW='env GDK_BACKEND=x11 flowblade'
+# shellcheck disable=SC2034
 INSTNAME='flowblade'
 # shellcheck disable=SC1090
 source <(curl -sSL https://estudio-debian.github.io/static/functions.sh)

@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
-am -i --icons inkscape
-sudo tee /usr/local/share/custom-launchers/inkscape >/dev/null <<EOF
-sudo sed -i '/^\[Desktop Entry\]/a StartupWMClass=org.inkscape.Inkscape' /usr/local/share/applications/inkscape-AM.desktop
-EOF
-sudo bash /usr/local/share/custom-launchers/inkscape
+# shellcheck disable=SC2034
+INSTNAME='flowblade'
+# shellcheck disable=SC1090
+source <(curl -sSL https://estudio-debian.github.io/static/functions.sh)
+install_deb
