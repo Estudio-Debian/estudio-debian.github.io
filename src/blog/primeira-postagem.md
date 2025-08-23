@@ -18,7 +18,7 @@ O repositório já conta com diversos programas, plugins de áudio e configuraç
 
 Tudo que há de melhor pra produção de conteúdo multimídia está reunido aqui.
 
-Programas como **REAPER**, **DaVinci Resolve**, **GIMP** e **Blender** são instalados em suas últimas versões, com uma adição de complementos e configurações pra que você possa extrair o máixmo possível deles, tudo selecionado a dedo pra que eles sejam executados com a melhor performance possível, além de complementos visuais e funcionais também.
+Programas como **REAPER**, **DaVinci Resolve**, **GIMP** e **Blender** são instalados em suas últimas versões, com uma adição de complementos e configurações pra que você possa extrair o máximo possível deles, tudo selecionado a dedo pra que eles sejam executados com a melhor desempenho possível, além de complementos visuais e funcionais também.
 
 ![DaVinci Resolve](./images/screenshot_2025-08-21_22-25-37.png)
 ![GIMP](./images/screenshot_2025-08-21_22-21-30.png)
