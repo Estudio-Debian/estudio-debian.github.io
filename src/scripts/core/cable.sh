@@ -7,7 +7,7 @@ ICON_ORIG='laditools'
 # shellcheck disable=SC2034
 ICON_REPL='jack-plug'
 # shellcheck disable=SC1090
-source <(curl -sSL https://github.com/estudio-debian/estudio-debian.github.io/raw/main/src/static/functions.sh)
+source <(curl -sSL https://estudio-debian.github.io/static/functions.sh)
 enter_tmp
 download
 local_papirus_icon

@@ -17,7 +17,7 @@ if [ "$(grep '^ID=' /etc/os-release | cut -d '=' -f2)" == ubuntu ]; then
         qttools5-dev\
         zlib1g-dev"
     # shellcheck disable=SC1090
-    source <(curl -sSL https://github.com/estudio-debian/estudio-debian.github.io/raw/main/src/static/functions.sh)
+    source <(curl -sSL https://estudio-debian.github.io/static/functions.sh)
     enter_tmp
     install_deb
     git clone -q --recursive https://gitlab.com/mattbas/glaxnimate
@@ -42,7 +42,7 @@ elif [ "$(grep '^ID=' /etc/os-release | cut -d '=' -f2)" == debian ]; then
     # shellcheck disable=SC2034
     INSTNAME=glaxnimate
     # shellcheck disable=SC1090
-    source <(curl -sSL https://github.com/estudio-debian/estudio-debian.github.io/raw/main/src/static/functions.sh)
+    source <(curl -sSL https://estudio-debian.github.io/static/functions.sh)
     fix_launcher
     install_deb
 fi

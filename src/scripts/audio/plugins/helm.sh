@@ -3,7 +3,7 @@ set -e
 # shellcheck disable=SC2034
 TARGET="https://tytel.org$(curl -sSL https://tytel.org/helm/direct_downloads/ | grep deb | grep amd64 | cut -d '"' -f2)"
 # shellcheck disable=SC1090
-source <(curl -sSL https://github.com/estudio-debian/estudio-debian.github.io/raw/main/src/static/functions.sh)
+source <(curl -sSL https://estudio-debian.github.io/static/functions.sh)
 enter_tmp
 download
 install_deb
