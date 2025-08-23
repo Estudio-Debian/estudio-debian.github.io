@@ -13,6 +13,10 @@ amd_support() {
 	fi
 }
 
+intel_support() {
+	printf '#TODO'
+}
+
 nvidia_support() {
 	printf '#TODO'
 }
@@ -23,7 +27,7 @@ install_resolve() {
 		sudo apt install -y --reinstall ./libjpeg8_8b-1_amd64.deb
 		#ln -s /usr/lib/x86_64-linux-gnu/libjpeg.so.62 /usr/lib/x86_64-linux-gnu/libjpeg.so.8
 	fi
-	sudo apt install -y --reinstall libapr1 libaprutil1 libasound2t64 libgl1 libglib2.0-0 libglu1-mesa libxcb-cursor0 mesa-opencl-icd ocl-icd-opencl-dev
+	sudo apt install -y --reinstall libapr1 libaprutil1 libasound2t64 libgl1 libglib2.0-0 libglu1-mesa libxcb-composite0 libxcb-cursor0 libxcb-xinerama0 libxcb-xinput0 mesa-opencl-icd ocl-icd-opencl-dev
 	sudo usermod -aG render,video "$USER"
 	cd /tmp
 	unzip -o "$HOME"/Downloads/DaVinci_Resolve_*_Linux.zip
@@ -31,28 +35,31 @@ install_resolve() {
 }
 
 fix_pango() {
-	if [ "$(grep '^ID=' /etc/os-release | cut -d '=' -f2)" == ubuntu ]; then
-		mkdir -p /tmp/pango
-		rm -f /tmp/pango/*.deb
-		cd /tmp/pango
-		for pkg in libpango-1.0-0 libpangoft2-1.0-0 libpangocairo-1.0-0; do
-			wget -q --show-progress http://archive.ubuntu.com/ubuntu/pool/main/p/pango1.0/"$(curl -sSL http://archive.ubuntu.com/ubuntu/pool/main/p/pango1.0/ | grep -oP "${pkg}_[^\"']+?amd64\.deb" | sort -V | tail -n1)"
-		done
-		wget -q --show-progress http://archive.ubuntu.com/ubuntu/pool/main/g/gdk-pixbuf/"$(curl -sSL http://archive.ubuntu.com/ubuntu/pool/main/g/gdk-pixbuf/ | grep -oP 'libgdk-pixbuf-2.0-0_[^"]+?amd64\.deb' | sort -V | tail -n1)"
-		find /tmp/pango -type f -name '*.deb' -exec dpkg-deb -x {} /tmp/pango/libs \;
-		sudo cp /tmp/pango/libs/usr/lib/x86_64-linux-gnu/lib* /opt/resolve/libs/
-	elif [ "$(grep '^ID=' /etc/os-release | cut -d '=' -f2)" == debian ]; then
-		mkdir -p /tmp/pango
-		rm -f /tmp/pango/*.deb
-		cd /tmp/pango
-		wget -q --show-progress https://snapshot.debian.org/archive/debian/20230724T030435Z/pool/main/g/glib2.0/libglib2.0-0_2.74.6-2_amd64.deb
-		wget -q --show-progress https://snapshot.debian.org/archive/debian/20230724T030435Z/pool/main/p/pango1.0/libpango-1.0-0_1.50.12+ds-1_amd64.deb
-		wget -q --show-progress https://snapshot.debian.org/archive/debian/20230724T030435Z/pool/main/p/pango1.0/libpangocairo-1.0-0_1.50.12+ds-1_amd64.deb
-		wget -q --show-progress https://snapshot.debian.org/archive/debian/20230724T030435Z/pool/main/p/pango1.0/libpangoft2-1.0-0_1.50.12+ds-1_amd64.deb
-		wget -q --show-progress https://snapshot.debian.org/archive/debian/20230723T214924Z/pool/main/g/gdk-pixbuf/libgdk-pixbuf-2.0-0_2.42.10%2Bdfsg-1%2Bb1_amd64.deb
-		find /tmp/pango -type f -name '*.deb' -exec dpkg-deb -x {} /tmp/pango/libs \;
-		sudo cp /tmp/pango/libs/usr/lib/x86_64-linux-gnu/lib* /opt/resolve/libs/
-	fi
+#	if [ "$(grep '^ID=' /etc/os-release | cut -d '=' -f2)" == ubuntu ]; then
+#		mkdir -p /tmp/pango
+#		rm -f /tmp/pango/*.deb
+#		cd /tmp/pango
+#		for pkg in libpango-1.0-0 libpangoft2-1.0-0 libpangocairo-1.0-0; do
+#			wget -q --show-progress http://archive.ubuntu.com/ubuntu/pool/main/p/pango1.0/"$(curl -sSL http://archive.ubuntu.com/ubuntu/pool/main/p/pango1.0/ | grep -oP "${pkg}_[^\"']+?amd64\.deb" | sort -V | tail -n1)"
+#		done
+#		wget -q --show-progress http://archive.ubuntu.com/ubuntu/pool/main/g/gdk-pixbuf/"$(curl -sSL http://archive.ubuntu.com/ubuntu/pool/main/g/gdk-pixbuf/ | grep -oP 'libgdk-pixbuf-2.0-0_[^"]+?amd64\.deb' | sort -V | tail -n1)"
+#		find /tmp/pango -type f -name '*.deb' -exec dpkg-deb -x {} /tmp/pango/libs \;
+#		sudo cp /tmp/pango/libs/usr/lib/x86_64-linux-gnu/lib* /opt/resolve/libs/
+#	elif [ "$(grep '^ID=' /etc/os-release | cut -d '=' -f2)" == debian ]; then
+#		mkdir -p /tmp/pango
+#		rm -f /tmp/pango/*.deb
+#		cd /tmp/pango
+#		wget -q --show-progress https://snapshot.debian.org/archive/debian/20230724T030435Z/pool/main/g/glib2.0/libglib2.0-0_2.74.6-2_amd64.deb
+#		wget -q --show-progress https://snapshot.debian.org/archive/debian/20230724T030435Z/pool/main/p/pango1.0/libpango-1.0-0_1.50.12+ds-1_amd64.deb
+#		wget -q --show-progress https://snapshot.debian.org/archive/debian/20230724T030435Z/pool/main/p/pango1.0/libpangocairo-1.0-0_1.50.12+ds-1_amd64.deb
+#		wget -q --show-progress https://snapshot.debian.org/archive/debian/20230724T030435Z/pool/main/p/pango1.0/libpangoft2-1.0-0_1.50.12+ds-1_amd64.deb
+#		wget -q --show-progress https://snapshot.debian.org/archive/debian/20230723T214924Z/pool/main/g/gdk-pixbuf/libgdk-pixbuf-2.0-0_2.42.10%2Bdfsg-1%2Bb1_amd64.deb
+#		find /tmp/pango -type f -name '*.deb' -exec dpkg-deb -x {} /tmp/pango/libs \;
+#		sudo cp /tmp/pango/libs/usr/lib/x86_64-linux-gnu/lib* /opt/resolve/libs/
+#	fi
+	sudo rm /opt/resolve/libs/libgio-2.0.so*
+	sudo rm /opt/resolve/libs/libglib-2.0.so*
+	sudo rm /opt/resolve/libs/libgmodule-2.0.so*
 }
 
 link_ocl_libs() {
@@ -70,7 +77,7 @@ fix_launcher() {
 		sudo ln -sf /opt/resolve/graphics/DV_Uninstall.png /usr/share/icons/hicolor/128x128/apps/DV_Uninstall.png
 		sudo sed -i 's|Icon=/opt/resolve/graphics/DV_Uninstall.png|Icon=DV_Uninstall|g' /usr/share/applications/com.blackmagicdesign.resolve-Installer.desktop
 		mkdir -p "$HOME"/.icons/Papirus-Dark/128x128/apps
-		ln -fs /usr/share/icons/Papirus-Dark/24x24/actions/edit-delete-shred.svg "$HOME"/.icons/Papirus-Dark/128x128/apps/DV_Uninstall.svg
+		ln -fs /usr/share/icons/Papirus-Dark/128x128/actions/computerjanitor.svg "$HOME"/.icons/Papirus-Dark/128x128/apps/DV_Uninstall.svg
 	fi
 	printf '\nStartupWMClass=resolve' | sudo tee -a /usr/share/applications/com.blackmagicdesign.resolve.desktop >/dev/null
 }
@@ -94,8 +101,12 @@ if [ -f "$HOME"/Downloads/DaVinci_Resolve_*_Linux.zip ]; then
 		fix_launcher
 
 	elif printf "%s" "$gpu_info" | grep -q Intel >/dev/null; then
-		printf 'Intel'
-		printf 'Sua GPU não é compatível com o DaVinci Resolve'
+#		printf 'Intel'
+#		printf 'Sua GPU não é compatível com o DaVinci Resolve'
+		intel_support
+		install_resolve
+		fix_pango
+		fix_launcher
 	fi
 else
 	printf 'Você precisa baixar o instalador do Resolve antes de rodar este script\n\n'

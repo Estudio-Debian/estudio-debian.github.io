@@ -1,10 +1,14 @@
 #!/bin/bash
 set -e
 # shellcheck disable=SC2034
-ICON_ORIG='obs'
+PPA='obsproject/obs-studio'
 # shellcheck disable=SC2034
-ICON_REPL='obs-studio'
+INSTNAME='obs-studio --no-install-recommends'
 # shellcheck disable=SC1090
-source <(curl -sSL https://github.com/estudio-debian/estudio-debian.github.io/raw/main/src/dist/functions.sh)
-local_papirus_icon
-printf 2|am -i --icons obs-studio
+source <(curl -s https://rauldipeas.com.br/uds/functions.sh)
+if [ "$(grep '^ID=' /etc/os-release | cut -d '=' -f2)" == ubuntu ]; then
+    add_ppa
+    install_deb
+elif [ "$(grep '^ID=' /etc/os-release | cut -d '=' -f2)" == debian ]; then
+    install_deb
+fi
