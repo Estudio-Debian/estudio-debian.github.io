@@ -1,8 +1,7 @@
 ---
-icon: https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/64x64/apps/distributor-logo-ubuntu.svg
 layout: blog
 ---
-# Estúdio Debian
+# ![](https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/48x48/apps/carla.svg) Estúdio Debian
 ![](static/studio.png)
 
 O **Estúdio Debian** é um repositório de scripts cujo objetivo é configurar o Debian, o Ubuntu e seus derivados pra trabalhar com criação de conteúdo multimídia, com foco especial no áudio em baixíssima latência.

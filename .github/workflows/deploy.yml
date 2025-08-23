@@ -1,9 +1,11 @@
 name: Publish Retype powered website to GitHub Pages
 on:
-  workflow_dispatch:
   push:
     branches:
       - main
+  workflow_dispatch:
+permissions:
+  contents: write
 jobs:
   publish:
     name: Publish to retype branch
@@ -21,3 +23,10 @@ jobs:
       - uses: retypeapp/action-github-pages@latest
         with:
           update-branch: true
+      - uses: otto-de/purge-deprecated-workflow-runs@v2
+        with:
+          remove-cancelled: true
+          remove-failed: true
+          remove-obsolete: true
+          token: ${{ secrets.GITHUB_TOKEN }}
+          remove-older-than: 1d

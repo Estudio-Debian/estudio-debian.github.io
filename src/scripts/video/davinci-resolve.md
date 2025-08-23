@@ -1,6 +1,6 @@
 ---
-icon: https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/64x64/apps/resolve.svg
+icon: https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/48x48/apps/resolve.svg
 ---
-# ![](https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/64x64/apps/resolve.svg) DaVinci Resolve
+# ![](https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/48x48/apps/resolve.svg) DaVinci Resolve
 :::code source="davinci-resolve.sh" :::
 [!button icon="terminal" iconAlign="right" corners="round" text="Executar script"](br:davinci-resolve)

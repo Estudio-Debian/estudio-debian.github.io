@@ -1,6 +1,6 @@
 ---
-icon: https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/64x64/apps/tenacity.svg
+icon: https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/48x48/apps/tenacity.svg
 ---
-# ![](https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/64x64/apps/tenacity.svg) Tenacity
+# ![](https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/48x48/apps/tenacity.svg) Tenacity
 :::code source="tenacity.sh" :::
 [!button icon="terminal" iconAlign="right" corners="round" text="Executar script"](br:tenacity)

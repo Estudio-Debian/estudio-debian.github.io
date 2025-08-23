@@ -3,13 +3,13 @@ output: .retype
 
 url: estudio-debian.github.io
 
-favicon: /static/mx-packageinstaller.svg
+favicon: /static/carla.svg
 
 locale: pt
 
 branding:
   title: Estúdio Debian
-  logo: /static/mx-packageinstaller.svg
+  logo: /static/carla.svg
   logoDark:
   logoAlign: left
   label:
@@ -26,7 +26,7 @@ links:
     icon: https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/24x24/apps/akregator.svg
   - text: Reportar um bug
     link: https://github.com/estudio-debian/estudio-debian.github.io/issues
-    icon: https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/64x64/apps/bugdom.svg
+    icon: https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/48x48/apps/bugdom.svg
     target: blank
   - text: Telegram
     link: https://t.me/producaomusicalnolinux

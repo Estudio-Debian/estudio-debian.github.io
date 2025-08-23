@@ -1,9 +1,8 @@
 ---
-icon: https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/64x64/apps/mx-packageinstaller.svg
 layout: page
 order: 100
 ---
-# Instalação
+# ![](https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/48x48/apps/mx-packageinstaller.svg) Instalação
 
 Pra executar os scripts deste repositório de forma facilitada, você pode instalar o `bashrun`, um utilitário que permite executar os scripts clicando num botão presente em todas as páginas.
 
