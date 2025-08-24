@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.11.0.809311637804">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.11.0.809322529650">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.11.0">
@@ -11,6 +11,7 @@
     <!-- Primary Meta Tags -->
     <title> Fontes de programas</title>
     <meta name="title" content=" Fontes de programas">
+    <meta name="description" content="Este script é o que faz grande mágica acontecer!">
 
     <!-- Canonical -->
     <link rel="canonical" href="https://estudio-debian.github.io/scripts/sources/software-sources/">
@@ -19,23 +20,25 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://estudio-debian.github.io/scripts/sources/software-sources/">
     <meta property="og:title" content=" Fontes de programas">
+    <meta property="og:description" content="Este script é o que faz grande mágica acontecer!">
     <meta property="og:image" content="https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/48x48/apps/software-properties.svg">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://estudio-debian.github.io/scripts/sources/software-sources/">
     <meta property="twitter:title" content=" Fontes de programas">
+    <meta property="twitter:description" content="Este script é o que faz grande mágica acontecer!">
     <meta property="twitter:image" content="https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/48x48/apps/software-properties.svg">
 
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link href="../../../static/carla.svg" rel="icon">
-    <link href="../../../resources/css/retype.css?v=3.11.0.809311637804" rel="stylesheet">
+    <link href="../../../resources/css/retype.css?v=3.11.0.809322529650" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.11.0.809311637804" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.11.0.809322529650" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../../resources/js/retype.js?v=3.11.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.11.0.809311637804" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="../../../resources/js/prism.js?v=3.11.0.809311637804" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.11.0.809322529650" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="../../../resources/js/prism.js?v=3.11.0.809322529650" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -237,6 +240,19 @@
         <span><img src="https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/48x48/apps/software-properties.svg" alt="" /> Fontes de programas</span>
     </h1>
 </doc-anchor-target>
+<p>Este script é o que faz <em>grande mágica</em> acontecer!</p>
+<p>Ele adiciona ao sistema outras fontes de instalação de programas, que são:</p>
+<p><a href="https://github.com/ivan-hc/AM"><code v-pre>am</code></a> - <em>instalador de programas <strong>AppImage</strong> e binários diretos do GitHub</em></p>
+<p><a href="https://pacstall.dev"><code v-pre>pacstall</code></a> - <em>instalador de pacotes <code v-pre>deb</code> de terceiros além de programas compilados direto do código fonte</em></p>
+<p>Outro complemento muito importante instalado através deste script é o <a href="https://github.com/topgrade-rs/topgrade"><code v-pre>topgrade</code></a>, um atualizador do sistema que checa tudo que é possível no sistema e atualiza de uma vez só, como por exemplo <code v-pre>apt</code>, <code v-pre>am</code>, <code v-pre>pacstall</code>, <em>Flatpak</em>, <em>Python</em>, <code v-pre>npm</code>, <em>Ruby</em>, etc...</p>
+<p>A lista de atualizações suportadas pelo <code v-pre>togprade</code> é realmente bem extensa.</p>
+<p>Além de tudo isso, ainda é disponibilizado um script <code v-pre>search-app</code> que você pode usar pra pesquisar programas no <code v-pre>apt</code>, <code v-pre>am</code> e <code v-pre>pacstall</code> de uma só vez.</p>
+<p>Basta digitar <code v-pre>search-app NOME_DO_APP</code> que ele exibe os resultados após a pesquisa nas 3 fontes.</p>
+<p><figure class="content-center">
+    <img src="../../../static/search-app.png" alt="search-app" class="rounded-image-rounded border-image-border border-image-border-width" />
+    <figcaption class="caption">search-app</figcaption>
+</figure>
+</p>
 <div class="codeblock-wrapper"><doc-codeblock line-numbers>
 <pre translate="no" class="language-bash"><code v-pre class="language-bash">#!/bin/bash
 set -e

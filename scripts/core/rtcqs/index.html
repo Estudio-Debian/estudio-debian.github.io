@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.11.0.809311637804">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.11.0.809322529650">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.11.0">
@@ -11,6 +11,7 @@
     <!-- Primary Meta Tags -->
     <title> rtcqs</title>
     <meta name="title" content=" rtcqs">
+    <meta name="description" content="O rtcqs é um checador de configurações.">
 
     <!-- Canonical -->
     <link rel="canonical" href="https://estudio-debian.github.io/scripts/core/rtcqs/">
@@ -19,23 +20,25 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://estudio-debian.github.io/scripts/core/rtcqs/">
     <meta property="og:title" content=" rtcqs">
+    <meta property="og:description" content="O rtcqs é um checador de configurações.">
     <meta property="og:image" content="https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/48x48/apps/utilities-log-viewer.svg">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://estudio-debian.github.io/scripts/core/rtcqs/">
     <meta property="twitter:title" content=" rtcqs">
+    <meta property="twitter:description" content="O rtcqs é um checador de configurações.">
     <meta property="twitter:image" content="https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/48x48/apps/utilities-log-viewer.svg">
 
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link href="../../../static/carla.svg" rel="icon">
-    <link href="../../../resources/css/retype.css?v=3.11.0.809311637804" rel="stylesheet">
+    <link href="../../../resources/css/retype.css?v=3.11.0.809322529650" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.11.0.809311637804" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.11.0.809322529650" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../../resources/js/retype.js?v=3.11.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.11.0.809311637804" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="../../../resources/js/prism.js?v=3.11.0.809311637804" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.11.0.809322529650" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="../../../resources/js/prism.js?v=3.11.0.809322529650" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -237,6 +240,15 @@
         <span><img src="https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/48x48/apps/utilities-log-viewer.svg" alt="" /> rtcqs</span>
     </h1>
 </doc-anchor-target>
+<p>O <a href="https://codeberg.org/rtcqs/rtcqs">rtcqs</a> é um <em>checador</em> de configurações.</p>
+<p>Com ele é possível saber se o seu sistema está apto pra trabalhar com áudio em baixa latência, por exemplo, ele exibe uma série de checagens que garantem isso.</p>
+<p>O único ítem dele que este script não <em>sana</em> são as mitigações de segurança do <em>spectre e meltdown</em>.</p>
+<p>Por ser um ítem de segurança, é preferível deixar a cargo de casa usuário.</p>
+<p><figure class="content-center">
+    <img src="../../../static/rtcqs.png" alt="rtcqs" class="rounded-image-rounded border-image-border border-image-border-width" />
+    <figcaption class="caption">rtcqs</figcaption>
+</figure>
+</p>
 <div class="codeblock-wrapper"><doc-codeblock line-numbers>
 <pre translate="no" class="language-bash"><code v-pre class="language-bash">#!/bin/bash
 set -e

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.11.0.809311637804">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.11.0.809322529650">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.11.0">
@@ -11,6 +11,7 @@
     <!-- Primary Meta Tags -->
     <title> Ubuntu Studio</title>
     <meta name="title" content=" Ubuntu Studio">
+    <meta name="description" content="Este script instala pacotes do Ubuntu Studio, responsáveis por configurações do sistema, além do PipeWire">
 
     <!-- Canonical -->
     <link rel="canonical" href="https://estudio-debian.github.io/scripts/core/ubuntustudio/">
@@ -19,23 +20,25 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://estudio-debian.github.io/scripts/core/ubuntustudio/">
     <meta property="og:title" content=" Ubuntu Studio">
+    <meta property="og:description" content="Este script instala pacotes do Ubuntu Studio, responsáveis por configurações do sistema, além do PipeWire">
     <meta property="og:image" content="https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/48x48/apps/distributor-logo-ubuntu-studio.svg">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://estudio-debian.github.io/scripts/core/ubuntustudio/">
     <meta property="twitter:title" content=" Ubuntu Studio">
+    <meta property="twitter:description" content="Este script instala pacotes do Ubuntu Studio, responsáveis por configurações do sistema, além do PipeWire">
     <meta property="twitter:image" content="https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/48x48/apps/distributor-logo-ubuntu-studio.svg">
 
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link href="../../../static/carla.svg" rel="icon">
-    <link href="../../../resources/css/retype.css?v=3.11.0.809311637804" rel="stylesheet">
+    <link href="../../../resources/css/retype.css?v=3.11.0.809322529650" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.11.0.809311637804" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.11.0.809322529650" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../../resources/js/retype.js?v=3.11.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.11.0.809311637804" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="../../../resources/js/prism.js?v=3.11.0.809311637804" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.11.0.809322529650" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="../../../resources/js/prism.js?v=3.11.0.809322529650" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -237,6 +240,27 @@
         <span><img src="https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/48x48/apps/distributor-logo-ubuntu-studio.svg" alt="" /> Ubuntu Studio</span>
     </h1>
 </doc-anchor-target>
+<p>Este script instala pacotes do <a href="https://ubuntustudio.org/">Ubuntu Studio</a>, responsáveis por configurações do sistema, além do <a href="https://gitlab.freedesktop.org/pipewire/pipewire">PipeWire</a> na versão mais atual.</p>
+<p>O repositório <code v-pre>noble-updates</code> do Ubuntu e o repositório PPA <code v-pre>savoury1/multimedia</code> são adicionados com o <a href="https://wiki.debian.org/AptConfiguration#Using_pinning"><em>pinning</em></a> baixo, impedindo que se sobreponham aos repositórios do Debian.</p>
+<p>Ele também instala o <a href="https://qjackctl.sourceforge.io/">QjackCtl</a>, caso você prefira usar o <a href="https://jackaudio.org/">JACK</a> diretamente, sem o PipeWire.</p>
+<p><figure class="content-center">
+    <img src="../../../static/qjackctl.png" alt="qjackctl" class="rounded-image-rounded border-image-border border-image-border-width" />
+    <figcaption class="caption">qjackctl</figcaption>
+</figure>
+</p>
+<p>Pra alternar entre o JACK e o PipeWire-JACK, você pode usar o comando <code v-pre>toggle-pipewire-jack</code>.</p>
+<p>Você também pode configurar o <em>quantum</em> e o <em>samplerate</em> do PipeWire de forma persistente através do <strong>PipeWire Quantum</strong> disponível no menu de aplicativos.</p>
+<p><figure class="content-center">
+    <img src="../../../static/pipewire-quantum.png" alt="pipewire-quantum" class="rounded-image-rounded border-image-border border-image-border-width" />
+    <figcaption class="caption">pipewire-quantum</figcaption>
+</figure>
+</p>
+<p>Além disso este script também instala o <a href="https://github.com/relulz/helvum">Helvum</a>, que é um patchbay com suporte a conexões de áudio e vídeo e também o <a href="https://github.com/hakavlad/nohang"><code v-pre>nohang</code></a>, que é um utilitário que impede o sistema de travar quando a memória está cheia, encerrando processos pra garantir que o sistema continue operando.</p>
+<p><figure class="content-center">
+    <img src="../../../static/helvum.png" alt="helvum" class="rounded-image-rounded border-image-border border-image-border-width" />
+    <figcaption class="caption">helvum</figcaption>
+</figure>
+</p>
 <div class="codeblock-wrapper"><doc-codeblock line-numbers>
 <pre translate="no" class="language-bash"><code v-pre class="language-bash">#!/bin/bash
 set -e

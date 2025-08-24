@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.11.0.809311637804">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.11.0.809322529650">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.11.0">
@@ -11,6 +11,7 @@
     <!-- Primary Meta Tags -->
     <title> Liquorix</title>
     <meta name="title" content=" Liquorix">
+    <meta name="description" content="O Liquorix é um kernel de baixa latência com diversas melhorias focadas em multimídia, em comparação ao kernel nativo do Debian e o Ubuntu, ele...">
 
     <!-- Canonical -->
     <link rel="canonical" href="https://estudio-debian.github.io/scripts/core/liquorix/">
@@ -19,23 +20,25 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://estudio-debian.github.io/scripts/core/liquorix/">
     <meta property="og:title" content=" Liquorix">
+    <meta property="og:description" content="O Liquorix é um kernel de baixa latência com diversas melhorias focadas em multimídia, em comparação ao kernel nativo do Debian e o Ubuntu, ele...">
     <meta property="og:image" content="https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/48x48/apps/gnome-firmware.svg">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://estudio-debian.github.io/scripts/core/liquorix/">
     <meta property="twitter:title" content=" Liquorix">
+    <meta property="twitter:description" content="O Liquorix é um kernel de baixa latência com diversas melhorias focadas em multimídia, em comparação ao kernel nativo do Debian e o Ubuntu, ele...">
     <meta property="twitter:image" content="https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/48x48/apps/gnome-firmware.svg">
 
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link href="../../../static/carla.svg" rel="icon">
-    <link href="../../../resources/css/retype.css?v=3.11.0.809311637804" rel="stylesheet">
+    <link href="../../../resources/css/retype.css?v=3.11.0.809322529650" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.11.0.809311637804" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.11.0.809322529650" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../../resources/js/retype.js?v=3.11.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.11.0.809311637804" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="../../../resources/js/prism.js?v=3.11.0.809311637804" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.11.0.809322529650" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="../../../resources/js/prism.js?v=3.11.0.809322529650" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -237,6 +240,13 @@
         <span><img src="https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/48x48/apps/gnome-firmware.svg" alt="" /> Liquorix</span>
     </h1>
 </doc-anchor-target>
+<p>O <a href="https://liquorix.net">Liquorix</a> é um kernel de baixa latência com diversas melhorias focadas em multimídia, em comparação ao kernel nativo do Debian e o Ubuntu, ele entrega um  desempenho bem mais alto.</p>
+<p>Além do Liquorix, este script também instala o <a href="https://github.com/AdnanHodzic/auto-cpufreq">auto-cpufreq</a>, necessário pra fazer o gerenciamento de energia e economizar bateria quando estiver usando um notebook fora da tomada, por exemplo.</p>
+<p><figure class="content-center">
+    <img src="../../../static/auto-cpufreq.png" alt="auto-cpufreq" class="rounded-image-rounded border-image-border border-image-border-width" />
+    <figcaption class="caption">auto-cpufreq</figcaption>
+</figure>
+</p>
 <div class="codeblock-wrapper"><doc-codeblock line-numbers>
 <pre translate="no" class="language-bash"><code v-pre class="language-bash">#!/bin/bash
 set -e
@@ -251,11 +261,13 @@ ICON_REPL='auto-cpufreq'
 # shellcheck disable=SC1090
 source &lt;(curl -sSL https://estudio-debian.github.io/static/functions.sh)
 local_papirus_icon
-cd /tmp
-rm -fr /tmp/auto-cpufreq
-git clone https://github.com/AdnanHodzic/auto-cpufreq
-cd auto-cpufreq
-printf i|sudo ./auto-cpufreq-installer</code></pre>
+if ls /sys/class/power_supply/BAT* &gt;/dev/null 2&gt;&amp;1; then
+    cd /tmp
+    rm -fr /tmp/auto-cpufreq
+    git clone https://github.com/AdnanHodzic/auto-cpufreq
+    cd auto-cpufreq
+    printf i|sudo ./auto-cpufreq-installer
+fi</code></pre>
 </doc-codeblock></div>
 <p><a href="br:liquorix" class="no-link inline-flex align-middle items-center font-medium cursor-pointer transition-colors duration-200 ease-out focus:outline-none bg-button-primary hover:bg-button-primary-hover text-button-primary-text px-4 h-10 text-sm rounded-md">
     <span>Executar script</span>
