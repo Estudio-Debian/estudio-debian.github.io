@@ -20,6 +20,7 @@ jobs:
           config_path: src/
       - run: |
           find /tmp/tmp.* -type f -name retype.css
+          sed -i '/--dark-850: #1e1e1e;/--dark-850: #000;/' "$(find /tmp/tmp.* -type f -name retype.css)"
           sed -i 's/121212/000/' "$(find /tmp/tmp.* -type f -name retype.css)" # background
           sed -i 's/222/00210e/' "$(find /tmp/tmp.* -type f -name retype.css)" # code
       - uses: retypeapp/action-github-pages@latest
