@@ -19,8 +19,8 @@ jobs:
         with:
           config_path: src/
       - run: |
-          sed -i 's/121212/000/' .retype/resources/css/retype.css # background
-          sed -i 's/222/00210e/' .retype/resources/css/retype.css # code
+          sed -i 's/121212/000/' "$(find . -type f -name retype.css)" # background
+          sed -i 's/222/00210e/' "$(find . -type f -name retype.css)" # code
       - uses: retypeapp/action-github-pages@latest
         with:
           update-branch: true
