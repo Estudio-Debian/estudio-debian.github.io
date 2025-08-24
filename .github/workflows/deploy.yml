@@ -23,6 +23,8 @@ jobs:
           sed -i 's/--dark-850: #1e1e1e;/--dark-850: #000;/' "$(find /tmp/tmp.* -type f -name retype.css)" # background
           sed -i 's/121212/000/' "$(find /tmp/tmp.* -type f -name retype.css)" # background
           sed -i 's/222/00210e/' "$(find /tmp/tmp.* -type f -name retype.css)" # code
+          sed -i 's|("https://fonts.googleapis.com/css?family=Roboto:300,900")|(../fonts/Inter-roman-latin-var.woff2) format("woff2")|' "$(find /tmp/tmp.* -type f -name retype.css)" # regular font
+          sed -i 's|("https://fonts.googleapis.com/css?family=Roboto:ital:300,900")|(../fonts/Inter-italic-latin-var.woff2) format("woff2")|' "$(find /tmp/tmp.* -type f -name retype.css)" # italic font
       - uses: retypeapp/action-github-pages@latest
         with:
           update-branch: true
