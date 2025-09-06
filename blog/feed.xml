@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Notícias</title>
+    <link>https://estudio-debian.github.io/blog/</link>
+    <description>Notícias</description>
+    <lastBuildDate>Sat, 06 Sep 2025 12:41:07 GMT</lastBuildDate>
+    <generator>https://retype.com</generator>
+    <atom:link rel="self" type="application/rss+xml" href="https://estudio-debian.github.io/blog/feed.xml" />
+    <item>
+      <title>O que há de novo no Estúdio Debian?</title>
+      <guid isPermaLink="true">https://estudio-debian.github.io/blog/primeira-postagem/</guid>
+      <description>Debian</description>
+      <author>github@rauldipeas.com.br (Raul Dipeas)</author>
+      <pubDate>Sat, 06 Sep 2025 12:41:07 GMT</pubDate>
+      <category domain="https://estudio-debian.github.io/categories/lançamento/">lançamento</category>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,534 @@
+{
+  "version": "3.11.0",
+  "created": "2025-09-06T15:41:14Z",
+  "files": [
+    {
+      "path": ".nojekyll"
+    },
+    {
+      "path": "404.html"
+    },
+    {
+      "path": "blog/feed.xml"
+    },
+    {
+      "path": "blog/images/screenshot_2025-08-21_21-19-03.png"
+    },
+    {
+      "path": "blog/images/screenshot_2025-08-21_22-03-49.png"
+    },
+    {
+      "path": "blog/images/screenshot_2025-08-21_22-07-53.png"
+    },
+    {
+      "path": "blog/images/screenshot_2025-08-21_22-10-08.png"
+    },
+    {
+      "path": "blog/images/screenshot_2025-08-21_22-21-30.png"
+    },
+    {
+      "path": "blog/images/screenshot_2025-08-21_22-25-37.png"
+    },
+    {
+      "path": "blog/index.html"
+    },
+    {
+      "path": "blog/primeira-postagem/index.html"
+    },
+    {
+      "path": "categories/index.html"
+    },
+    {
+      "path": "categories/lançamento/index.html"
+    },
+    {
+      "path": "index.html"
+    },
+    {
+      "path": "installation/index.html"
+    },
+    {
+      "path": "resources/css/retype.css"
+    },
+    {
+      "path": "resources/fonts/Inter-italic-latin-var.woff2"
+    },
+    {
+      "path": "resources/fonts/Inter-roman-latin-var.woff2"
+    },
+    {
+      "path": "resources/js/config.js"
+    },
+    {
+      "path": "resources/js/lunr.js"
+    },
+    {
+      "path": "resources/js/prism.js"
+    },
+    {
+      "path": "resources/js/retype.js"
+    },
+    {
+      "path": "resources/js/search.json"
+    },
+    {
+      "path": "resources/lunr.js.LICENSE.txt"
+    },
+    {
+      "path": "resources/mermaid.js.LICENSE.txt"
+    },
+    {
+      "path": "resources/prism.js.LICENSE.txt"
+    },
+    {
+      "path": "resources/retype.js.LICENSE.txt"
+    },
+    {
+      "path": "resources/retype.LICENSE.txt"
+    },
+    {
+      "path": "robots.txt"
+    },
+    {
+      "path": "scripts/audio/audiorelay/index.html"
+    },
+    {
+      "path": "scripts/audio/easy-effects/index.html"
+    },
+    {
+      "path": "scripts/audio/mod-desktop/index.html"
+    },
+    {
+      "path": "scripts/audio/musescore-studio/index.html"
+    },
+    {
+      "path": "scripts/audio/plugins/aether/index.html"
+    },
+    {
+      "path": "scripts/audio/plugins/artv/index.html"
+    },
+    {
+      "path": "scripts/audio/plugins/auburnsounds/index.html"
+    },
+    {
+      "path": "scripts/audio/plugins/audio-assault/index.html"
+    },
+    {
+      "path": "scripts/audio/plugins/bluewingsmusic/index.html"
+    },
+    {
+      "path": "scripts/audio/plugins/chowdsp/index.html"
+    },
+    {
+      "path": "scripts/audio/plugins/cloudreverb/index.html"
+    },
+    {
+      "path": "scripts/audio/plugins/consint/index.html"
+    },
+    {
+      "path": "scripts/audio/plugins/crql/index.html"
+    },
+    {
+      "path": "scripts/audio/plugins/dexed/index.html"
+    },
+    {
+      "path": "scripts/audio/plugins/dimethoxy/index.html"
+    },
+    {
+      "path": "scripts/audio/plugins/dragonfly/index.html"
+    },
+    {
+      "path": "scripts/audio/plugins/helm/index.html"
+    },
+    {
+      "path": "scripts/audio/plugins/hy-plugins/index.html"
+    },
+    {
+      "path": "scripts/audio/plugins/lsp-plugins/index.html"
+    },
+    {
+      "path": "scripts/audio/plugins/magnetophon/index.html"
+    },
+    {
+      "path": "scripts/audio/plugins/mx-tune/index.html"
+    },
+    {
+      "path": "scripts/audio/plugins/neuralrack/index.html"
+    },
+    {
+      "path": "scripts/audio/plugins/odin2/index.html"
+    },
+    {
+      "path": "scripts/audio/plugins/sapphire-plugins/index.html"
+    },
+    {
+      "path": "scripts/audio/plugins/sfizz/index.html"
+    },
+    {
+      "path": "scripts/audio/plugins/surge-xt/index.html"
+    },
+    {
+      "path": "scripts/audio/plugins/tal/index.html"
+    },
+    {
+      "path": "scripts/audio/plugins/themasker/index.html"
+    },
+    {
+      "path": "scripts/audio/plugins/tonelib/index.html"
+    },
+    {
+      "path": "scripts/audio/plugins/vztec/index.html"
+    },
+    {
+      "path": "scripts/audio/plugins/x42-plugins/index.html"
+    },
+    {
+      "path": "scripts/audio/plugins/zl-audio/index.html"
+    },
+    {
+      "path": "scripts/audio/q4wine/index.html"
+    },
+    {
+      "path": "scripts/audio/reaper/index.html"
+    },
+    {
+      "path": "scripts/audio/tenacity/index.html"
+    },
+    {
+      "path": "scripts/audio/wine-tkg/index.html"
+    },
+    {
+      "path": "scripts/audio/yabridge/index.html"
+    },
+    {
+      "path": "scripts/image/gcolor3/index.html"
+    },
+    {
+      "path": "scripts/image/gimp/index.html"
+    },
+    {
+      "path": "scripts/image/inkscape/index.html"
+    },
+    {
+      "path": "scripts/image/krita/index.html"
+    },
+    {
+      "path": "scripts/main/core/cable/index.html"
+    },
+    {
+      "path": "scripts/main/core/liquorix/index.html"
+    },
+    {
+      "path": "scripts/main/core/rtcqs/index.html"
+    },
+    {
+      "path": "scripts/main/core/ubuntustudio/index.html"
+    },
+    {
+      "path": "scripts/main/core/video-drivers/index.html"
+    },
+    {
+      "path": "scripts/main/dependencies/apt-hooks/index.html"
+    },
+    {
+      "path": "scripts/main/dependencies/unsnap-fresh-ubuntu/index.html"
+    },
+    {
+      "path": "scripts/main/sources/deb-multimedia/index.html"
+    },
+    {
+      "path": "scripts/main/sources/flatpak/index.html"
+    },
+    {
+      "path": "scripts/main/sources/software-sources/index.html"
+    },
+    {
+      "path": "scripts/main/sources/synaptic/index.html"
+    },
+    {
+      "path": "scripts/main/sources/xtradeb/index.html"
+    },
+    {
+      "path": "scripts/video/blender/index.html"
+    },
+    {
+      "path": "scripts/video/davinci-resolve/index.html"
+    },
+    {
+      "path": "scripts/video/flowblade/index.html"
+    },
+    {
+      "path": "scripts/video/friction/index.html"
+    },
+    {
+      "path": "scripts/video/glaxnimate/index.html"
+    },
+    {
+      "path": "scripts/video/iriun/index.html"
+    },
+    {
+      "path": "scripts/video/kdenlive/index.html"
+    },
+    {
+      "path": "scripts/video/natron/index.html"
+    },
+    {
+      "path": "scripts/video/obs-studio/index.html"
+    },
+    {
+      "path": "scripts/video/shutter-encoder/index.html"
+    },
+    {
+      "path": "sitemap.xml.gz"
+    },
+    {
+      "path": "static/aether.png"
+    },
+    {
+      "path": "static/amplocker.png"
+    },
+    {
+      "path": "static/auto-cpufreq.png"
+    },
+    {
+      "path": "static/bashrun.deb"
+    },
+    {
+      "path": "static/byod.png"
+    },
+    {
+      "path": "static/cable.png"
+    },
+    {
+      "path": "static/carla.svg"
+    },
+    {
+      "path": "static/chowkick.png"
+    },
+    {
+      "path": "static/chowmatrix.png"
+    },
+    {
+      "path": "static/chowmultitool.png"
+    },
+    {
+      "path": "static/chowtapemodel.png"
+    },
+    {
+      "path": "static/cloudreverb.png"
+    },
+    {
+      "path": "static/couture.png"
+    },
+    {
+      "path": "static/del2.png"
+    },
+    {
+      "path": "static/dexed.png"
+    },
+    {
+      "path": "static/disflux.png"
+    },
+    {
+      "path": "static/dragonflyearlyreflections.png"
+    },
+    {
+      "path": "static/dragonflyhall.png"
+    },
+    {
+      "path": "static/dragonflyplate.png"
+    },
+    {
+      "path": "static/dragonflyroom.png"
+    },
+    {
+      "path": "static/drumlocker.png"
+    },
+    {
+      "path": "static/elastika.png"
+    },
+    {
+      "path": "static/fire.png"
+    },
+    {
+      "path": "static/functions.lib"
+    },
+    {
+      "path": "static/galaxy.png"
+    },
+    {
+      "path": "static/graillon3.png"
+    },
+    {
+      "path": "static/gravy.png"
+    },
+    {
+      "path": "static/helm.png"
+    },
+    {
+      "path": "static/helvum.png"
+    },
+    {
+      "path": "static/hy-mbmfx3free.png"
+    },
+    {
+      "path": "static/innerpitch2.png"
+    },
+    {
+      "path": "static/lact.png"
+    },
+    {
+      "path": "static/lamb.png"
+    },
+    {
+      "path": "static/lens.png"
+    },
+    {
+      "path": "static/locd.png"
+    },
+    {
+      "path": "static/lsp-plugins-chorusstereo.png"
+    },
+    {
+      "path": "static/lsp-plugins-clipperstereo.png"
+    },
+    {
+      "path": "static/lsp-plugins-compressorstereo.png"
+    },
+    {
+      "path": "static/lsp-plugins-graphicequalizerx32stereo.png"
+    },
+    {
+      "path": "static/malibu.png"
+    },
+    {
+      "path": "static/mixlocker.png"
+    },
+    {
+      "path": "static/mixmaxtrix.png"
+    },
+    {
+      "path": "static/mxtune.png"
+    },
+    {
+      "path": "static/neuralrack.png"
+    },
+    {
+      "path": "static/odin2.png"
+    },
+    {
+      "path": "static/overdrive.png"
+    },
+    {
+      "path": "static/panagement2.png"
+    },
+    {
+      "path": "static/pipewire-quantum.png"
+    },
+    {
+      "path": "static/plasma.png"
+    },
+    {
+      "path": "static/pulteq.png"
+    },
+    {
+      "path": "static/qjackctl.png"
+    },
+    {
+      "path": "static/renegate.png"
+    },
+    {
+      "path": "static/rtcqs.png"
+    },
+    {
+      "path": "static/search-app.png"
+    },
+    {
+      "path": "static/sfizz.png"
+    },
+    {
+      "path": "static/studio.png"
+    },
+    {
+      "path": "static/surgext.png"
+    },
+    {
+      "path": "static/surgexteffects.png"
+    },
+    {
+      "path": "static/synaptic.png"
+    },
+    {
+      "path": "static/talchoruslx.png"
+    },
+    {
+      "path": "static/talfilter2.png"
+    },
+    {
+      "path": "static/talreverb4.png"
+    },
+    {
+      "path": "static/talvocoder2.png"
+    },
+    {
+      "path": "static/themasker.png"
+    },
+    {
+      "path": "static/tonelibbassdrive.png"
+    },
+    {
+      "path": "static/tonelibbaxeq.png"
+    },
+    {
+      "path": "static/tonelibdetuner.png"
+    },
+    {
+      "path": "static/tonelibdistraptor.png"
+    },
+    {
+      "path": "static/tonelibeasycomp.png"
+    },
+    {
+      "path": "static/tonelibgfx.png"
+    },
+    {
+      "path": "static/tonelibmetal.png"
+    },
+    {
+      "path": "static/tonelibmulticomp.png"
+    },
+    {
+      "path": "static/tonelibnoisereducer.png"
+    },
+    {
+      "path": "static/tonelibtubewarmthex.png"
+    },
+    {
+      "path": "static/tubeunit.png"
+    },
+    {
+      "path": "static/turbopaco.png"
+    },
+    {
+      "path": "static/x42autotune.png"
+    },
+    {
+      "path": "static/x42comp.png"
+    },
+    {
+      "path": "static/x42dpl.png"
+    },
+    {
+      "path": "static/x42eq.png"
+    },
+    {
+      "path": "static/x42instrumenttuner.png"
+    },
+    {
+      "path": "static/zlcompressor.png"
+    },
+    {
+      "path": "static/zlequalizer.png"
+    }
+  ]
+}
